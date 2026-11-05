@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arman Mansoori | Software Developer & MCA</title>
+  <meta name="description" content="Portfolio of Arman Mansoori - MCA Student @ Acharya Institute, Full-Stack Java Engineer, Multimodal AI & Flutter Application Developer based in Bangalore, India.">
+  <meta name="keywords" content="Arman Mansoori, Software Engineer, Java Developer, Flutter Developer, Next.js, AI Engineer, MCA Bangalore, Acharya Institute, CampusFind AI, KITSU">
+  <meta name="author" content="Arman Mansoori">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220%22%20width=%2232%22%20height=%2232%22><rect width=%2232%22 height=%2232%22 rx=%228%22 fill=%22%231e293b%22/><text x=%227%22 y=%2222%22 font-family=%22sans-serif%22 font-weight=%22800%22 font-size=%2216%22 fill=%22%2338bdf8%22>AM</text></svg>">
+  
+  <!-- Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Top Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="nav-brand">Portfolio</a>
+
+      <!-- Navigation Links -->
+      <nav class="nav-links" id="nav-links">
+        <a href="#hero" class="nav-item active">Home</a>
+        <a href="#skills" class="nav-item">Skills</a>
+        <a href="#projects" class="nav-item">Projects</a>
+        <a href="#experience" class="nav-item">Experience</a>
+        <a href="#certifications" class="nav-item">Certifications</a>
+        <a href="#contact" class="nav-item">Contact</a>
+      </nav>
+
+      <!-- Nav Right Controls -->
+      <div class="nav-right">
+        <a href="https://github.com/armanmansoori17" target="_blank" rel="noopener noreferrer" class="nav-icon-link" title="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://linkedin.com/in/arman-mansoori15" target="_blank" rel="noopener noreferrer" class="nav-icon-link" title="LinkedIn">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="mailto:mansooriarman15@gmail.com" class="nav-icon-link" title="Email">
+          <i class="fa-regular fa-envelope"></i>
+        </a>
+        <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle theme" title="Toggle theme">
+          <i class="fa-regular fa-moon moon-icon"></i>
+          <i class="fa-regular fa-sun sun-icon"></i>
+        </button>
+
+        <!-- Mobile Menu Trigger -->
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <div class="mobile-menu-links">
+      <a href="#hero" class="mobile-link">Home</a>
+      <a href="#skills" class="mobile-link">Skills</a>
+      <a href="#projects" class="mobile-link">Projects</a>
+      <a href="#experience" class="mobile-link">Experience</a>
+      <a href="#certifications" class="mobile-link">Certifications</a>
+      <a href="#contact" class="mobile-link">Contact</a>
+      <a href="assets/Arman_Mansoori_Resume.pdf" class="mobile-link resume-mobile" download="Arman_Mansoori_Resume.pdf">
+        <i class="fa-solid fa-download"></i> Download CV
+      </a>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO SECTION (Full Screen Edge-to-Edge) -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        <!-- Hero Left Content -->
+        <div class="hero-left">
+          <!-- Status Pill -->
+          <div class="status-pill">
+            <span class="status-dot"></span>
+            <span>Open to new opportunities</span>
+          </div>
+
+          <!-- Headline with subtle right fade on name -->
+          <h1 class="hero-headline">Hi, I'm <span class="name-fade">Arman</span></h1>
+
+          <!-- Dynamic Typing Line -->
+          <div class="typing-line">
+            <span class="typing-text" id="typing-text">Full Stack Java Developer</span>
+            <span class="typing-cursor">|</span>
+          </div>
+
+          <!-- Concise Technical Bio -->
+          <p class="hero-bio">
+            Backend-focused Software Engineer and MCA Scholar at <strong>Acharya Institute of Graduate Studies, Bangalore</strong>. 
+            Experienced in delivering scalable enterprise applications using <strong>Java, Spring Boot, MySQL, Flutter, and Next.js</strong>. 
+            Specialized in API integrations, multimodal AI workflows, and lead architecture.
+          </p>
+
+          <!-- Location & Availability Tag -->
+          <div class="hero-meta-row">
+            <span class="meta-item"><i class="fa-solid fa-location-dot"></i> Bangalore, India</span>
+            <span class="meta-separator">•</span>
+            <span class="meta-item meta-avail"><i class="fa-regular fa-envelope"></i> Available for hire</span>
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="hero-btn-row">
+            <a href="assets/Arman_Mansoori_Resume.pdf" class="btn btn-white" download="Arman_Mansoori_Resume.pdf" target="_blank">
+              <i class="fa-solid fa-arrow-down"></i>
+              <span>Download CV</span>
+            </a>
+            <a href="#contact" class="btn btn-dark-outline">
+              <i class="fa-regular fa-envelope"></i>
+              <span>Get In Touch</span>
+            </a>
+          </div>
+
+          <!-- Mini Social Icon Buttons Row (Matching Reference) -->
+          <div class="hero-mini-socials">
+            <a href="https://github.com/armanmansoori17" target="_blank" rel="noopener noreferrer" class="mini-social-btn" title="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/arman-mansoori15" target="_blank" rel="noopener noreferrer" class="mini-social-btn" title="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:mansooriarman15@gmail.com" class="mini-social-btn" title="Email">
+              <i class="fa-regular fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Right Monogram Avatar (Matching Reference) -->
+        <div class="hero-right">
+          <div class="monogram-wrapper">
+            <div class="monogram-outer-ring">
+              <div class="monogram-inner-circle">
+                <span class="monogram-text">AM</span>
+              </div>
+            </div>
+
+            <!-- Orbiting Badges -->
+            <div class="orbit-badge badge-top-right">
+              <span>10+ Projects</span>
+            </div>
+            <div class="orbit-badge badge-bottom-left">
+              <span>MCA Scholar</span>
+            </div>
+            <div class="orbit-badge badge-bottom-right">
+              <span class="pulse-indicator"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS & TECHNOLOGIES SECTION -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-title-wrap text-center">
+          <a href="https://github.com/armanmansoori17" target="_blank" rel="noopener noreferrer" class="view-repos-btn">
+            <i class="fa-solid fa-code-fork"></i>
+            <span>View All Repositories</span>
+          </a>
+          <h2 class="section-heading">&lt;/&gt; Skills &amp; Technologies</h2>
+        </div>
+
+        <!-- Skills Grid: Structured by Domain (Matches Image 3 & 4) -->
+        <div class="skills-domain-grid">
+          
+          <!-- Category 1: Backend Development -->
+          <div class="domain-card">
+            <div class="domain-header">
+              <div class="domain-icon-box">
+                <i class="fa-solid fa-server"></i>
+              </div>
+              <div class="domain-info">
+                <h3 class="domain-title">Backend Development</h3>
+                <p class="domain-desc">Building secure, scalable backend architectures</p>
+              </div>
+            </div>
+
+            <div class="domain-items-grid">
+              <div class="skill-item">
+                <div class="skill-item-icon java-icon"><i class="fa-brands fa-java"></i></div>
+                <span class="skill-item-name">Java</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-icon spring-icon"><i class="fa-solid fa-leaf"></i></div>
+                <span class="skill-item-name">Spring Boot</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-icon servlets-icon"><i class="fa-solid fa-network-wired"></i></div>
+                <span class="skill-item-name">JSP &amp; Servlets</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-icon api-icon"><i class="fa-solid fa-bolt"></i></div>
+                <span class="skill-item-name">REST APIs</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-icon c-icon"><i class="fa-solid fa-c"></i></div>
+                <span class="skill-item-name">C Programming</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-icon sec-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                <span class="skill-item-name">AES Cryptography</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2: AI & Machine Learning -->
+          <div class="domain-card">
+            <div class="domain-header">
+              <div class="domain-icon-box">
+                <i class="fa-solid fa-brain"></i>
+              </div>
+              <div class="domain-info">
+                <h3 class="domain-title">AI &amp; Data Science</h3>
+                <p class="domain-desc">Multimodal deep learning and predictive pipelines</p>
+              </div>
+            </div>
+
+            <div class="domain-items-grid">
+              <div class="skill-item">
+                <div class="skill-item-icon python-icon"><i class="fa-brands fa-python"></i></div>
+                <span class="skill-item-name">Python (IIT Madras)</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-icon resnet-icon"><i class="fa-solid fa-camera"></i></div>
+                <span class="skill-item-name">ResNet50 (CNN)</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-icon sbert-icon"><i class="fa-solid fa-file-lines"></i></div>
+                <span class="skill-item-name">SBERT Embeddings</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-icon xgb-icon"><i class="fa-solid fa-chart-line"></i></div>
+                <span class="skill-item-name">XGBoost Matcher</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-icon fastapi-icon"><i class="fa-solid fa-bolt-lightning"></i></div>
+                <span class="skill-item-name">FastAPI</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-icon nlp-icon"><i class="fa-solid fa-microchip"></i></div>
+                <span class="skill-item-name">Data Analytics</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3: Frontend & Mobile -->
+          <div class="domain-card">
+            <div class="domain-header">
+              <div class="domain-icon-box">
+                <i class="fa-solid fa-mobile-screen"></i>
+              </div>
+              <div class="domain-info">
+                <h3 class="domain-title">Frontend &amp; Mobile</h3>
+                <p class="domain-desc">Creating modern, responsive user interfaces</p>
+              </div>
+            </div>
+
+            <div class="domain-items-grid">
+              <div class="skill-item">
+                <div class="skill-item-icon flutter-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                <span class="skill-item-name">Flutter &amp; Dart</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-icon nextjs-icon"><i class="fa-brands fa-react"></i></div>
+                <span class="skill-item-name">Next.js &amp; React</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-icon js-icon"><i class="fa-brands fa-js"></i></div>
+                <span class="skill-item-name">JavaScript ES6+</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-icon html-icon"><i class="fa-brands fa-html5"></i></div>
+                <span class="skill-item-name">HTML5 / CSS3</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-icon bootstrap-icon"><i class="fa-brands fa-bootstrap"></i></div>
+                <span class="skill-item-name">Bootstrap</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-icon pwa-icon"><i class="fa-solid fa-globe"></i></div>
+                <span class="skill-item-name">Service Workers (PWA)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 4: Database & Cloud -->
+          <div class="domain-card">
+            <div class="domain-header">
+              <div class="domain-icon-box">
+                <i class="fa-solid fa-database"></i>
+              </div>
+              <div class="domain-info">
+                <h3 class="domain-title">Database &amp; Cloud</h3>
+                <p class="domain-desc">Designing efficient data storage, caching, and auth</p>
+              </div>
+            </div>
+
+            <div class="domain-items-grid">
+              <div class="skill-item">
+                <div class="skill-item-icon mysql-icon"><i class="fa-solid fa-database"></i></div>
+                <span class="skill-item-name">MySQL</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-icon postgres-icon"><i class="fa-solid fa-server"></i></div>
+                <span class="skill-item-name">PostgreSQL</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-icon firestore-icon"><i class="fa-solid fa-fire"></i></div>
+                <span class="skill-item-name">Cloud Firestore</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-icon supabase-icon"><i class="fa-solid fa-bolt"></i></div>
+                <span class="skill-item-name">Supabase</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-icon jdbc-icon"><i class="fa-solid fa-link"></i></div>
+                <span class="skill-item-name">JDBC Connection Pools</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-icon fbhost-icon"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+                <span class="skill-item-name">Firebase Hosting</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 5: DevOps & Tooling -->
+          <div class="domain-card full-width-domain">
+            <div class="domain-header">
+              <div class="domain-icon-box">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+              </div>
+              <div class="domain-info">
+                <h3 class="domain-title">DevOps &amp; Developer Tooling</h3>
+                <p class="domain-desc">Streamlining deployment, cluster operations, and CI/CD</p>
+              </div>
+            </div>
+
+            <div class="domain-items-grid five-cols">
+              <div class="skill-item">
+                <div class="skill-item-icon openshift-icon"><i class="fa-brands fa-redhat"></i></div>
+                <span class="skill-item-name">Red Hat OpenShift (DO180)</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-icon git-icon"><i class="fa-brands fa-github"></i></div>
+                <span class="skill-item-name">Git &amp; GitHub</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-icon maven-icon"><i class="fa-solid fa-cubes"></i></div>
+                <span class="skill-item-name">Maven</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-icon vscode-icon"><i class="fa-solid fa-code"></i></div>
+                <span class="skill-item-name">VS Code / Cursor</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-icon eclipse-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                <span class="skill-item-name">Eclipse IDE</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Technical Expertise Summary Banner (Matching Image 4) -->
+        <div class="technical-expertise-banner">
+          <div class="expertise-title">
+            <i class="fa-solid fa-shield-halved"></i>
+            <span>Technical Expertise</span>
+          </div>
+          <div class="expertise-stats-grid">
+            <div class="stat-col">
+              <span class="stat-number">15+</span>
+              <span class="stat-label">Technologies</span>
+            </div>
+            <div class="stat-col">
+              <span class="stat-number">MCA</span>
+              <span class="stat-label">Postgraduate Scholar</span>
+            </div>
+            <div class="stat-col">
+              <span class="stat-number">4+</span>
+              <span class="stat-label">Engineered Projects</span>
+            </div>
+            <div class="stat-col">
+              <span class="stat-number">7+</span>
+              <span class="stat-label">Certifications &amp; Hackathons</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS SECTION (Matching Image 5) -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-title-wrap text-center">
+          <h2 class="section-heading"><i class="fa-regular fa-folder-open"></i> Featured Projects</h2>
+          
+          <!-- Filter Tabs -->
+          <div class="project-filter-tabs">
+            <button class="filter-tab active" data-filter="all">All</button>
+            <button class="filter-tab" data-filter="ai">AI &amp; ML</button>
+            <button class="filter-tab" data-filter="fullstack">Full Stack</button>
+            <button class="filter-tab" data-filter="mobile">Mobile Apps</button>
+            <button class="filter-tab" data-filter="java">Java &amp; Security</button>
+          </div>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+
+          <!-- Project 1: CampusFind AI -->
+          <div class="project-card" data-category="ai mobile">
+            <div class="project-preview-box">
+              <div class="preview-header-bar">
+                <span class="badge-live"><i class="fa-solid fa-circle"></i> AI Engine</span>
+                <span class="badge-stats"><i class="fa-solid fa-brain"></i> Multimodal</span>
+              </div>
+              <div class="preview-visual ai-visual">
+                <div class="pipeline-flow">
+                  <span class="pipe-node">ResNet50 Vision</span>
+                  <span class="pipe-plus">+</span>
+                  <span class="pipe-node">SBERT NLP</span>
+                  <span class="pipe-arrow">→</span>
+                  <span class="pipe-node active-node">XGBoost 94.8%</span>
+                </div>
+              </div>
+              <span class="badge-category">AI / Mobile</span>
+            </div>
+
+            <div class="project-info">
+              <h3 class="project-name">CampusFind AI: Multimodal Lost-and-Found Matcher</h3>
+              <p class="project-summary">
+                A cross-platform campus lost-and-found platform that uses multimodal AI to automatically match lost and found item reports using images and semantic descriptions.
+              </p>
+
+              <div class="project-tags-row">
+                <span class="ptag">Flutter</span>
+                <span class="ptag">FastAPI</span>
+                <span class="ptag">Python</span>
+                <span class="ptag">ResNet50</span>
+                <span class="ptag">SBERT</span>
+                <span class="ptag">XGBoost</span>
+                <span class="ptag">Supabase</span>
+              </div>
+
+              <div class="project-features-list">
+                <div class="feature-title">— Key Features</div>
+                <ul class="feature-bullets">
+                  <li>Integrated ResNet50 for image feature extraction and SBERT for semantic text similarity.</li>
+                  <li>Trained XGBoost to calculate match confidence using image, description, location, and time features.</li>
+                  <li>Implemented Supabase authentication, PostgreSQL storage, image uploads, and admin claim verification.</li>
+                </ul>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://github.com/armanmansoori17" target="_blank" rel="noopener noreferrer" class="proj-btn">
+                  <i class="fa-brands fa-github"></i> View Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: AIKYAM 2K26 -->
+          <div class="project-card" data-category="fullstack">
+            <div class="project-preview-box">
+              <div class="preview-header-bar">
+                <span class="badge-live"><i class="fa-solid fa-circle"></i> Live Platform</span>
+                <span class="badge-stats"><i class="fa-solid fa-crown"></i> Lead Architect</span>
+              </div>
+              <div class="preview-visual web-visual">
+                <div class="fest-stats-mockup">
+                  <div class="fest-col">
+                    <span class="f-num">Next.js</span>
+                    <span class="f-lbl">Static Export</span>
+                  </div>
+                  <div class="fest-col">
+                    <span class="f-num">PWA</span>
+                    <span class="f-lbl">Offline Cache</span>
+                  </div>
+                  <div class="fest-col">
+                    <span class="f-num">Firestore</span>
+                    <span class="f-lbl">Real-time DB</span>
+                  </div>
+                </div>
+              </div>
+              <span class="badge-category">Full Stack</span>
+            </div>
+
+            <div class="project-info">
+              <h3 class="project-name">AIKYAM 2K26: Event Management Web Platform</h3>
+              <p class="project-summary">
+                Official digital platform developed for the annual IT fest organized at Acharya Institute of Graduate Studies to handle fest activities and event registrations.
+              </p>
+
+              <div class="project-tags-row">
+                <span class="ptag">Next.js</span>
+                <span class="ptag">Firebase Hosting</span>
+                <span class="ptag">Cloud Firestore</span>
+                <span class="ptag">JavaScript</span>
+                <span class="ptag">Service Workers</span>
+              </div>
+
+              <div class="project-features-list">
+                <div class="feature-title">— Key Features</div>
+                <ul class="feature-bullets">
+                  <li>Served as Lead Developer and Architect, leading development, build automation, and deployment.</li>
+                  <li>Architected Next.js static export with automated version stamping and service worker configuration.</li>
+                  <li>Implemented production build workflows and integrated Firestore into the deployment pipeline.</li>
+                </ul>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://github.com/armanmansoori17" target="_blank" rel="noopener noreferrer" class="proj-btn">
+                  <i class="fa-brands fa-github"></i> View Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: KITSU -->
+          <div class="project-card" data-category="ai mobile">
+            <div class="project-preview-box">
+              <div class="preview-header-bar">
+                <span class="badge-live blue-badge"><i class="fa-solid fa-circle"></i> AI Platform</span>
+                <span class="badge-stats"><i class="fa-solid fa-graduation-cap"></i> EdTech</span>
+              </div>
+              <div class="preview-visual edtech-visual">
+                <div class="dna-tracker-mock">
+                  <div class="dna-header-row">
+                    <span class="dna-label"><i class="fa-solid fa-dna"></i> Career DNA Analysis</span>
+                    <span class="dna-score">Verified Level 4</span>
+                  </div>
+                  <div class="dna-progress-bar">
+                    <div class="dna-fill" style="width: 86%;"></div>
+                  </div>
+                </div>
+              </div>
+              <span class="badge-category">Mobile &amp; AI</span>
+            </div>
+
+            <div class="project-info">
+              <h3 class="project-name">KITSU: AI-Powered Adaptive Learning Platform</h3>
+              <p class="project-summary">
+                An AI-powered adaptive learning platform designed to help users assess, improve, and verify their technical skills through personalized AI assessments.
+              </p>
+
+              <div class="project-tags-row">
+                <span class="ptag">Flutter</span>
+                <span class="ptag">Dart</span>
+                <span class="ptag">Firebase Auth</span>
+                <span class="ptag">Firestore</span>
+                <span class="ptag">AI Engine</span>
+              </div>
+
+              <div class="project-features-list">
+                <div class="feature-title">— Key Features</div>
+                <ul class="feature-bullets">
+                  <li>Engineered Career DNA analysis algorithms generating personalized technical learning roadmaps.</li>
+                  <li>Built adaptive AI-driven diagnostic tests adjusting difficulty based on continuous user performance.</li>
+                  <li>Implemented real-time progress tracking, competitive leaderboards, and recruiter-ready verified skill profiles.</li>
+                </ul>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://github.com/armanmansoori17" target="_blank" rel="noopener noreferrer" class="proj-btn">
+                  <i class="fa-brands fa-github"></i> View Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: SMART PASSWORD VAULT -->
+          <div class="project-card" data-category="java">
+            <div class="project-preview-box">
+              <div class="preview-header-bar">
+                <span class="badge-live amber-badge"><i class="fa-solid fa-shield"></i> AES-256</span>
+                <span class="badge-stats"><i class="fa-solid fa-lock"></i> Security</span>
+              </div>
+              <div class="preview-visual sec-visual">
+                <div class="vault-console-mock">
+                  <span class="c-line c-green">[SECURE] Master Auth Verified</span>
+                  <span class="c-line c-blue">[CIPHER] AES Data Layer Initialized</span>
+                  <span class="c-line c-white">[AUDIT] Zero-Plaintext Storage Active</span>
+                </div>
+              </div>
+              <span class="badge-category">Java &amp; Security</span>
+            </div>
+
+            <div class="project-info">
+              <h3 class="project-name">Smart Password Vault: Cryptographic Manager</h3>
+              <p class="project-summary">
+                A security-focused credential management system in Java enforcing cryptographic encryption, master access gates, and tamper-proof audit trails.
+              </p>
+
+              <div class="project-tags-row">
+                <span class="ptag">Java</span>
+                <span class="ptag">JDBC</span>
+                <span class="ptag">MySQL</span>
+                <span class="ptag">AES Encryption</span>
+                <span class="ptag">Audit Logging</span>
+              </div>
+
+              <div class="project-features-list">
+                <div class="feature-title">— Key Features</div>
+                <ul class="feature-bullets">
+                  <li>Features master authentication and AES encryption ensuring zero plaintext storage at rest.</li>
+                  <li>Engineered duplicate credential collision prevention and structured timestamped audit logging.</li>
+                  <li>Implemented normalized MySQL database persistence via clean JDBC abstraction layers.</li>
+                </ul>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://github.com/armanmansoori17" target="_blank" rel="noopener noreferrer" class="proj-btn">
+                  <i class="fa-brands fa-github"></i> View Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION (Matching Image 2 layout!) -->
+    <section class="section experience-section" id="experience">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-title-wrap text-center">
+          <h2 class="section-heading"><i class="fa-solid fa-briefcase"></i> Experience</h2>
+        </div>
+
+        <div class="experience-list">
+          
+          <!-- Experience Card 1: CodSoft -->
+          <div class="experience-card">
+            <!-- Header Block -->
+            <div class="exp-card-header">
+              <div class="exp-company-icon">
+                <i class="fa-solid fa-laptop-code"></i>
+              </div>
+              <div class="exp-header-content">
+                <div class="exp-title-row">
+                  <h3 class="exp-position">Java Developer Intern</h3>
+                  <span class="exp-type-pill">Team Leader</span>
+                </div>
+                <div class="exp-company-name">CODSOFT</div>
+              </div>
+              <div class="exp-meta-right">
+                <span class="exp-date"><i class="fa-regular fa-calendar"></i> Kolkata (Remote)</span>
+                <span class="exp-loc"><i class="fa-solid fa-location-dot"></i> India</span>
+              </div>
+            </div>
+
+            <!-- Two-Column Inner Layout (Key Responsibilities & Impact) -->
+            <div class="exp-body-columns">
+              <div class="exp-col-left">
+                <h4 class="exp-subhead">Key Responsibilities</h4>
+                <ul class="exp-duties">
+                  <li>Gained hands-on skills in Java application development, object-oriented design, and debugging.</li>
+                  <li>Developed multiple software utilities and institutional projects adhering to clean architecture.</li>
+                  <li>Appointed as Team Leader with the responsibility to coordinate a team of interns, track milestone progress, and ensure efficient, timely completion of all deliverables.</li>
+                  <li>Conducted code reviews and assisted intern team members in resolving core technical roadblocks.</li>
+                </ul>
+              </div>
+
+              <div class="exp-col-right">
+                <h4 class="exp-subhead">Impact</h4>
+                <div class="impact-metrics-list">
+                  <div class="impact-metric-row">
+                    <span class="impact-name">Team Leadership</span>
+                    <span class="impact-value"><i class="fa-solid fa-arrow-trend-up"></i> Squad Leader</span>
+                  </div>
+                  <div class="impact-metric-row">
+                    <span class="impact-name">Project Delivery</span>
+                    <span class="impact-value"><i class="fa-solid fa-arrow-trend-up"></i> 100% On-Time</span>
+                  </div>
+                  <div class="impact-metric-row">
+                    <span class="impact-name">Sprint Efficiency</span>
+                    <span class="impact-value"><i class="fa-solid fa-arrow-trend-up"></i> Zero-Blocker</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Technologies Used Row -->
+            <div class="exp-tech-footer">
+              <span class="exp-tech-label">Technologies Used</span>
+              <div class="exp-tech-tags">
+                <span class="exp-tag">Java</span>
+                <span class="exp-tag">Core Java</span>
+                <span class="exp-tag">OOP</span>
+                <span class="exp-tag">Collections</span>
+                <span class="exp-tag">Git / GitHub</span>
+                <span class="exp-tag">Team Leadership</span>
+                <span class="exp-tag">Code Reviews</span>
+                <span class="exp-tag">Sprint Delivery</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience Card 2: Euphoria GenX -->
+          <div class="experience-card">
+            <!-- Header Block -->
+            <div class="exp-card-header">
+              <div class="exp-company-icon">
+                <i class="fa-brands fa-java"></i>
+              </div>
+              <div class="exp-header-content">
+                <div class="exp-title-row">
+                  <h3 class="exp-position">Advance Java Industrial Trainee</h3>
+                  <span class="exp-type-pill">Industrial Training</span>
+                </div>
+                <div class="exp-company-name">EUPHORIA GENX <span class="exp-sub-company">(Unit of Techno Exponent Software Services)</span></div>
+              </div>
+              <div class="exp-meta-right">
+                <span class="exp-date"><i class="fa-regular fa-calendar"></i> Industrial Program</span>
+                <span class="exp-loc"><i class="fa-solid fa-location-dot"></i> Kolkata, India</span>
+              </div>
+            </div>
+
+            <!-- Two-Column Inner Layout (Key Responsibilities & Impact) -->
+            <div class="exp-body-columns">
+              <div class="exp-col-left">
+                <h4 class="exp-subhead">Key Responsibilities</h4>
+                <ul class="exp-duties">
+                  <li>Completed industrial training in Advance Java enterprise architectures from Euphoria GenX (Techno Exponent).</li>
+                  <li>Extensively developed hands-on web components using JSP (JavaServer Pages), Java Servlets, and Core Java design patterns.</li>
+                  <li>Engineered database persistence workflows integrating JDBC prepared statements, transaction management, and connection handling.</li>
+                  <li>Learned enterprise software development lifecycle standards and industry best practices.</li>
+                </ul>
+              </div>
+
+              <div class="exp-col-right">
+                <h4 class="exp-subhead">Impact</h4>
+                <div class="impact-metrics-list">
+                  <div class="impact-metric-row">
+                    <span class="impact-name">Enterprise Stack</span>
+                    <span class="impact-value"><i class="fa-solid fa-arrow-trend-up"></i> JSP &amp; Servlets</span>
+                  </div>
+                  <div class="impact-metric-row">
+                    <span class="impact-name">Data Persistence</span>
+                    <span class="impact-value"><i class="fa-solid fa-arrow-trend-up"></i> Secure JDBC</span>
+                  </div>
+                  <div class="impact-metric-row">
+                    <span class="impact-name">Industry Practice</span>
+                    <span class="impact-value"><i class="fa-solid fa-arrow-trend-up"></i> Commercial Standards</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Technologies Used Row -->
+            <div class="exp-tech-footer">
+              <span class="exp-tech-label">Technologies Used</span>
+              <div class="exp-tech-tags">
+                <span class="exp-tag">Advance Java</span>
+                <span class="exp-tag">JSP</span>
+                <span class="exp-tag">Servlets</span>
+                <span class="exp-tag">JDBC</span>
+                <span class="exp-tag">MySQL</span>
+                <span class="exp-tag">MVC Architecture</span>
+                <span class="exp-tag">Apache Tomcat</span>
+                <span class="exp-tag">Eclipse</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Education Subsection -->
+        <div class="education-block">
+          <h3 class="edu-title"><i class="fa-solid fa-graduation-cap"></i> Education</h3>
+          <div class="edu-grid">
+            <div class="edu-card">
+              <div class="edu-badge-curr">Pursuing</div>
+              <h4 class="edu-degree">Master's in Computer Application (MCA)</h4>
+              <p class="edu-institution">Acharya Institute of Graduate Studies</p>
+              <div class="edu-footer">
+                <span><i class="fa-solid fa-location-dot"></i> Bengaluru, Karnataka</span>
+                <span class="edu-timeline">Oct 2025 – Present</span>
+              </div>
+            </div>
+
+            <div class="edu-card">
+              <div class="edu-badge-done">Completed</div>
+              <h4 class="edu-degree">Bachelor's of Computer Application (BCA)</h4>
+              <p class="edu-institution">George College</p>
+              <div class="edu-footer">
+                <span><i class="fa-solid fa-location-dot"></i> Kolkata, West Bengal</span>
+                <span class="edu-timeline">Aug 2021 – July 2025</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS & ACHIEVEMENTS SECTION -->
+    <section class="section certs-section" id="certifications">
+      <div class="container">
+        <div class="section-title-wrap text-center">
+          <h2 class="section-heading"><i class="fa-solid fa-award"></i> Certifications &amp; Achievements</h2>
+          <p class="section-lead">Verified industry certifications, national hackathons, and technical workshops.</p>
+        </div>
+
+        <div class="certs-table-grid">
+          
+          <div class="cert-row-card hackathon-card">
+            <div class="cert-col-icon"><i class="fa-solid fa-trophy"></i></div>
+            <div class="cert-col-main">
+              <h3 class="cert-title">DECIPHER-X 2026 — National Level Hackathon</h3>
+              <p class="cert-issuer">AI &amp; Cyber Security Track · Participation &amp; Project Certificate</p>
+            </div>
+            <div class="cert-col-tag"><span class="cert-pill gold-pill">National Hackathon</span></div>
+          </div>
+
+          <div class="cert-row-card">
+            <div class="cert-col-icon"><i class="fa-brands fa-python"></i></div>
+            <div class="cert-col-main">
+              <h3 class="cert-title">Python for Data Science</h3>
+              <p class="cert-issuer">NPTEL — IIT Madras</p>
+            </div>
+            <div class="cert-col-tag"><span class="cert-pill">IIT Madras Certified</span></div>
+          </div>
+
+          <div class="cert-row-card">
+            <div class="cert-col-icon"><i class="fa-brands fa-redhat"></i></div>
+            <div class="cert-col-main">
+              <h3 class="cert-title">Red Hat OpenShift Administration I: Operating a Production Cluster (DO180)</h3>
+              <p class="cert-issuer">Red Hat</p>
+            </div>
+            <div class="cert-col-tag"><span class="cert-pill">Red Hat Verified</span></div>
+          </div>
+
+          <div class="cert-row-card">
+            <div class="cert-col-icon"><i class="fa-brands fa-java"></i></div>
+            <div class="cert-col-main">
+              <h3 class="cert-title">Advanced Java &amp; Spring Boot</h3>
+              <p class="cert-issuer">Euphoria GenX (Techno Exponent)</p>
+            </div>
+            <div class="cert-col-tag"><span class="cert-pill">Enterprise Training</span></div>
+          </div>
+
+          <div class="cert-row-card">
+            <div class="cert-col-icon"><i class="fa-solid fa-layer-group"></i></div>
+            <div class="cert-col-main">
+              <h3 class="cert-title">Full Stack Java Developer</h3>
+              <p class="cert-issuer">Udemy</p>
+            </div>
+            <div class="cert-col-tag"><span class="cert-pill">Course Completion</span></div>
+          </div>
+
+          <div class="cert-row-card">
+            <div class="cert-col-icon"><i class="fa-solid fa-wifi"></i></div>
+            <div class="cert-col-main">
+              <h3 class="cert-title">Build and Control Smart Devices Using IoT</h3>
+              <p class="cert-issuer">Acharya Institute of Graduate Studies, in association with TechKnots</p>
+            </div>
+            <div class="cert-col-tag"><span class="cert-pill">Hands-on IoT</span></div>
+          </div>
+
+          <div class="cert-row-card">
+            <div class="cert-col-icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <div class="cert-col-main">
+              <h3 class="cert-title">Digital Public Infrastructure Workshop</h3>
+              <p class="cert-issuer">eMudhra</p>
+            </div>
+            <div class="cert-col-tag"><span class="cert-pill">Digital Trust &amp; PKI</span></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-title-wrap text-center">
+          <h2 class="section-heading"><i class="fa-regular fa-paper-plane"></i> Get In Touch</h2>
+          <p class="section-lead">Feel free to reach out for software engineering roles, internships, or project discussions.</p>
+        </div>
+
+        <div class="contact-box-grid">
+          <!-- Left: Direct Contact Information -->
+          <div class="contact-left-col">
+            <div class="contact-info-card">
+              <div class="info-row">
+                <div class="info-icon"><i class="fa-regular fa-envelope"></i></div>
+                <div class="info-text">
+                  <span class="info-label">Email</span>
+                  <a href="mailto:mansooriarman15@gmail.com" class="info-value">mansooriarman15@gmail.com</a>
+                </div>
+              </div>
+
+              <div class="info-row">
+                <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                <div class="info-text">
+                  <span class="info-label">Phone</span>
+                  <a href="tel:+917586969855" class="info-value">+91 7586969855</a>
+                </div>
+              </div>
+
+              <div class="info-row">
+                <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="info-text">
+                  <span class="info-label">Location</span>
+                  <span class="info-value">Bangalore, Karnataka, India</span>
+                  <span class="reloc-note">Open to remote &amp; on-site relocation</span>
+                </div>
+              </div>
+
+              <div class="info-row">
+                <div class="info-icon"><i class="fa-solid fa-link"></i></div>
+                <div class="info-text">
+                  <span class="info-label">Social Links</span>
+                  <div class="contact-social-row">
+                    <a href="https://linkedin.com/in/arman-mansoori15" target="_blank" rel="noopener noreferrer" class="social-btn" title="LinkedIn">
+                      <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/armanmansoori17" target="_blank" rel="noopener noreferrer" class="social-btn" title="GitHub">
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="mailto:mansooriarman15@gmail.com" class="social-btn" title="Direct Email">
+                      <i class="fa-regular fa-envelope"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Clean Contact Form -->
+          <div class="contact-right-col">
+            <form id="contact-form" class="clean-form">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="Opportunity / Project Inquiry" required>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" placeholder="Hello Arman, I reviewed your portfolio and would like to connect..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-white w-100" id="submit-btn">
+                <span>Send Message</span>
+                <i class="fa-regular fa-paper-plane"></i>
+              </button>
+
+              <div class="form-status-msg" id="form-status"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <span class="footer-brand">Arman Mansoori</span>
+        <span class="footer-copy">&copy; <span id="current-year">2026</span> · MCA Scholar &amp; Software Developer</span>
+      </div>
+      <div class="footer-right">
+        <a href="#hero">Back to top <i class="fa-solid fa-arrow-up"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Element -->
+  <div class="toast-box" id="toast-box"></div>
+
+  <!-- Custom Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
